@@ -4,10 +4,10 @@ int ft_str_is_numeric(char *str)
 		return 1;
 	while(*str)
 	{
-		if(*str>='0' && *str<='9')
-			return 1;
+		if(!(*str>='0' && *str<='9'))
+			return 0;
 		str++;
 	}
-	return 0;
+	return 1;
 	
 }
